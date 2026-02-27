@@ -1,0 +1,375 @@
+/* Purity UI Dashboards - Custom Styling */
+.purity-page {
+    padding: 24px;
+    background-color: #F8F9FA;
+    min-height: calc(100vh - 60px);
+    color: #2D3748;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.purity-header {
+    margin-bottom: 24px;
+}
+
+.purity-breadcrumb {
+    font-size: 12px;
+    color: #A0AEC0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.purity-breadcrumb-active {
+    color: #2D3748;
+    font-weight: 600;
+}
+
+.purity-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D3748;
+    margin: 0;
+}
+
+.purity-subtitle {
+    font-size: 14px;
+    color: #A0AEC0;
+    margin-top: 4px;
+}
+
+/* Stats */
+.purity-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.purity-stat-card {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 18px 20px;
+    box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.purity-stat-label {
+    font-size: 12px;
+    color: #A0AEC0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+}
+
+.purity-stat-value {
+    font-size: 20px;
+    color: #2D3748;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+}
+
+.purity-stat-sub {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.purity-stat-sub.positive {
+    color: #48BB78;
+}
+
+.purity-stat-sub.negative {
+    color: #E53E3E;
+}
+
+.purity-stat-sub.neutral {
+    color: #A0AEC0;
+}
+
+.purity-stat-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.05);
+}
+
+/* Charts grid */
+.purity-charts-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+    .purity-charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.purity-card {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 24px;
+    box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+.purity-card-header {
+    margin-bottom: 24px;
+}
+
+.purity-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2D3748;
+    margin: 0 0 4px 0;
+}
+
+.purity-card-subtitle {
+    font-size: 14px;
+    color: #A0AEC0;
+    margin: 0;
+}
+
+.positive-text {
+    color: #48BB78;
+    font-weight: 700;
+}
+
+.purity-chart-container {
+    height: 300px;
+    width: 100%;
+}
+
+.chart-card.pie-card .purity-chart-container {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.purity-pie-legend {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.purity-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.purity-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.purity-legend-text {
+    margin: 0;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.purity-legend-name {
+    color: #A0AEC0;
+    font-weight: 700;
+}
+
+.purity-legend-value {
+    color: #2D3748;
+    font-weight: 700;
+}
+
+/* Tooltip */
+.purity-tooltip {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.purity-tooltip-label {
+    font-weight: 700;
+    font-size: 14px;
+    color: #2D3748;
+    margin: 0 0 8px 0;
+}
+
+.purity-tooltip-item {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Bottom Grid */
+.purity-bottom-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .purity-bottom-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.live-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #48BB78;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.purity-btn-minimal {
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    color: #A0AEC0;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.purity-btn-minimal:hover {
+    color: #2D3748;
+}
+
+/* Table */
+.purity-table-container {
+    overflow-x: auto;
+}
+
+.purity-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.purity-table th {
+    text-align: left;
+    font-size: 10px;
+    color: #A0AEC0;
+    font-weight: 700;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E2E8F0;
+    text-transform: uppercase;
+}
+
+.purity-table td {
+    padding: 16px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.purity-table tr:last-child td {
+    border-bottom: none;
+}
+
+.flex-cell {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.purity-icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: #F8F9FA;
+}
+
+.purity-cell-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2D3748;
+}
+
+.purity-cell-sub {
+    font-size: 12px;
+    font-weight: 600;
+    color: #A0AEC0;
+}
+
+/* Dept Performance */
+.purity-dept-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.purity-dept-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.purity-dept-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purity-dept-name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2D3748;
+}
+
+.purity-dept-stats {
+    font-size: 12px;
+    color: #A0AEC0;
+    font-weight: 600;
+}
+
+.purity-dept-progress-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.purity-dept-eff {
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 40px;
+}
+
+.purity-progress-bg {
+    flex: 1;
+    height: 6px;
+    background: #E2E8F0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.purity-progress-fill {
+    height: 100%;
+    border-radius: 4px;
+}
