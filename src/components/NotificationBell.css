@@ -1,0 +1,144 @@
+/* Notification Bell Styles */
+.notif-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.notif-bell-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+.notif-bell-btn:hover {
+    transform: scale(1.1);
+    color: #2563EB;
+}
+
+.notif-badge {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    background-color: #E53E3E;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px white;
+}
+
+.notif-dropdown {
+    position: absolute;
+    top: 45px;
+    right: -10px;
+    width: 320px;
+    max-width: 90vw;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    overflow: hidden;
+    animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.notif-header {
+    padding: 16px;
+    border-bottom: 1px solid #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notif-header h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2D3748;
+}
+
+.notif-count-text {
+    font-size: 12px;
+    color: #2563EB;
+    font-weight: bold;
+}
+
+.notif-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notif-empty {
+    padding: 24px;
+    text-align: center;
+    color: #A0AEC0;
+    font-size: 14px;
+    margin: 0;
+}
+
+.notif-item {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #F7FAFC;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    gap: 12px;
+}
+
+.notif-item:last-child {
+    border-bottom: none;
+}
+
+.notif-item:hover {
+    background-color: #F8FAFC;
+}
+
+.notif-item.unread {
+    background-color: #EBF4FF;
+}
+
+.notif-item.unread:hover {
+    background-color: #E2E8F0;
+}
+
+.notif-icon {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2px;
+}
+
+.notif-content {
+    flex: 1;
+}
+
+.notif-message {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    color: #2D3748;
+    line-height: 1.4;
+}
+
+.notif-time {
+    font-size: 11px;
+    color: #A0AEC0;
+}
